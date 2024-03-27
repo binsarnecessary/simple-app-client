@@ -20,7 +20,7 @@ export default class HeaderNavbar extends Component {
     console.log("🚀 ~ HeaderNavbar ~ handleLogout= ~ response:", response);
     if (response.success) {
       alert(response.data);
-      Cookies.remove('authToken')
+      // Cookies.remove('authToken')
       localStorage.clear();
       window.location.href = "/";
     }
